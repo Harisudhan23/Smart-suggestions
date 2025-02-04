@@ -59,7 +59,6 @@ def smart_query_generate(transcript, context, titles):
     - Revise the tone of the content so that it no longer directly references the original source in any way.
 
 
-
 6. Return the output in JSON format with the following structure:
 
                         {{
@@ -156,7 +155,7 @@ integration, pre-configured reports, dashboards, and real-time alerting
 features for critical security even
 """
 
-query = """Develop a comprehensive blog post discussing the importance of Customer Identity and Access Management (CIAM) in today's digital landscape. Explain the challenges businesses face and how Infisign's CIAM solutions provide a comprehensive approach to address these challenges. Include real-world examples and insights from the case study to demonstrate the benefits of implementing Infisign's solutions.
+query = """Compose a personalized email to a potential client introducing Infisign's CIAM solution. Briefly outline the challenges businesses commonly face in this area and how Infisign's solution can help them address these challenges. Include a link to a case study or resource that provides more information. Conclude with a clear call-to-action, such as scheduling a demo or providing a free consultation.
 """
 websearch_result="""no web_search result 
 """

@@ -32,39 +32,44 @@ def smart_query_generate(transcript, context, titles):
 
 4. **Post Formatting Instructions**:
     - **LinkedIn**:
-        - **Hook**: Begin with a compelling question, bold statement, or data-driven insight to immediately capture attention.
-        - **Tone**: Professional, informative and engaging.
-        - **Content**: Craft a concise and insightful post that highlights key takeaways from the document. Provide a unique perspective or actionable insights that add value to the audience. Conclude with a thought-provoking call-to-action to encourage discussion and engagement.
-        - **Format**: 3–4 short paragraphs with 2-5 relevant hashtags.
+        - **Hook**: Begin with a compelling question, bold statement, or data-driven insight to immediately grab attention and spark curiosity.
+        - **Tone**: Professional, informative, and engaging tone that resonates with industry professionals.
+        - **Content**: Craft a concise and insightful post that highlights key takeaways from the document. Provide unique insights, expert perspectives, or actionable strategies that add value to the audience.
+                       Incorporate real-world applications, relevant trends, or thought-provoking statements to encourage engagement.End with a strong call-to-action (e.g., asking for opinions, encouraging discussion, or suggesting next steps).
+        - **Format**: 3–4 short, well-structured paragraphs for readability. Use concise language while maintaining depth and clarity. Include 2–5 relevant hashtags to optimize reach and engagement.
+
 
     - **Twitter**:
-        - **Hook**: Open with an attention-grabbing statement, question, fact, or bold statement.
-        - **Tone**: Concise, impactful,engaging and to the point.
-        - **Content**: Create a tweet or a short thread that distills a critical insight from the document. Ensure clarity and engagement within the 280-character limit. Use relevant hashtags, emojis, and an optional link for further reading.
-        - **Hashtags**: Use 2–3 relevant trending hashtags and relevant emoji to enhance engagement and maximize visibility.
-        - **Format**: A single tweet or thread (1–2 tweets).
+        - **Hook**: Start with a bold statement, thought-provoking question, surprising fact, or a concise data-driven insight to immediately capture attention.
+        - **Tone**: Keep it concise, impactful, and engaging.
+        - **Content**: Craft a single tweet or a short thread (1–2 tweets) that highlights a key insight from the document. Ensure clarity and engagement within the 280-character limit. Ensure it is easy to understand, thought-provoking, and encourages engagement (likes, shares, replies). Use relevant emojis to enhance readability and engagement.
+        - **Hashtags**: Use 2–5 relevant, trending hashtags to boost discoverability. Ensure hashtags are contextually relevant to the topic. 
+        - **Format**: A single tweet or a thread (1–2 tweets) for additional context or deeper insights.
 
     - **Facebook**:
-        - **Hook**: Start with an engaging question, bold statement, or relatable insight.
-        - **Tone**: Conversational, friendly, informal style and relatable.
-        - **Content**: Write a medium-length post that summarizes the document in a casual way. Include a question or call-to-action to invite comments.
-        - **Format**: 2–3 paragraphs with relevant hashtags.
+        - **Hook**: Start with a compelling question, bold statement, or relatable insight to grab attention.
+        - **Tone**: Keep it friendly, conversational, and engaging, making it easy for readers to relate.
+        - **Content**: Write a medium-length post that summarizes the document in a casual way. Use a casual, storytelling approach to make the topic more engaging. 
+                       Keep sentences short and direct for better readability. Add a question or call-to-action to spark conversation and encourage comments.
+        - **Engagement boosters**: Use emojis to add personality and improve readability. Include hashtags (2–3 relevant ones) to increase visibility         
+        - **Format**: 2–3 short paragraphs with natural flow. Line breaks for better readability.
 
     - **Blog**:
-        - **Hook**: Begin with a compelling question, bold statement, or surprising fact to draw in the reader.
-        - **Tone**: Informative, Detailed, and educational.
-        - **Content**: Create a well-structured blog post (500–600 words) that introduces the document’s key insights in an engaging and easy-to-digest manner. Utilize bullet points, numbered lists, or bold highlights to emphasize key insights for better readability. Use supporting data, case studies, or real-world examples where applicable. Provide a solution or actionable takeaway.
-        - **SEO Optimization**: Naturally integrate relevant keywords for search visibility. Include a meta description summarizing the article and reference credible sources through internal and external links.
-        - **Format**: Use clear subheadings for structure, keeping paragraphs concise (2–3 sentences each). Ensure a clear introduction, main body, and conclusion.
+        - **Hook**: Begin with a compelling question, bold statement, or surprising fact that immediately captures attention.
+        - **Tone**: Keep the tone informative, detailed, and educational while ensuring readability.
+        - **Content**: Create a well-structured blog post (500–600 words) that introduces the document’s key insights in an engaging and easy-to-digest manner.Ensure clarity and logical flow from introduction to conclusion. Use a storytelling approach where applicable to enhance engagement. 
+        - **Readability & Engagement**: Utilize bullet points, numbered lists, or bold highlights to emphasize important takeaways. Support claims with real-world examples, case studies, or relevant data to add credibility. Provide a clear solution or actionable takeaway that readers can implement.
+        - **SEO Optimization**: Include a meta description summarizing the article and reference credible sources through internal and external links. Write a meta description summarizing the article concisely (150–160 characters). Include internal and external links to authoritative sources where appropriate.
+        - **Format**: Use clear subheadings for easy navigation and readability, keeping paragraphs concise (2–3 sentences each). Ensure a strong conclusion that reinforces key takeaways and encourages engagement (e.g., a thought-provoking question or call to action).
 
     - **Email**:
-        - **Tone**: Personal, direct, and action-oriented.
-        - **Subject Line**: Create a compelling subject line (max 8 words) that grabs attention.
-        - **Personalization**: If possible, address the recipient by name for engagement.
-        - **Introduction**: Start with a hook, question, or problem statement related to the content.
-        - **Content**: Write a concise email that summarizes the document and ends with a strong and clear call-to-action (e.g., visiting a website, signing up, etc.).
-        - **Closing**: Use a friendly and professional sign-off.
-        - **Format**: Short introduction, body with key insights, and a clear CTA.
+        - **Tone**: Personal, direct, and action-oriented to make the reader feel valued and motivated to respond.
+        - **Subject Line**: Max 8 words for clarity and impact. Use power words to create urgency or curiosity.(e.g., "Unlock Seamless CIAM Security Today!" or "Struggling with Identity Management?")
+        - **Personalization**: Address the recipient by name if available (e.g., "Hi [First Name],"). Make the message relevant to their needs or pain points.
+        - **Introduction**: Start with a hook, question, or relatable problem statement to immediately engage the reader. Keep it short and impactful to encourage further reading.
+        - **Content**: Summarize the document’s key takeaways in 2–3 short paragraphs. Use bullet points or bold highlights for easy scanning. Maintain a logical flow from problem to solution.
+        - **Closing**: End with a clear and compelling CTA. Make it actionable and time-sensitive to drive engagement. Use a friendly and professional sign-off (e.g., Best regards, Looking forward to your thoughts, Let’s chat soon!).
+        - **Format**: Short introduction, body content with key insights, and a clear CTA.
 
 5. **Ensure no direct references to the original source**:
     - Revise the tone of the content so that it no longer directly references the original source in any way.
@@ -162,10 +167,10 @@ Audit Logs and Reports:
 comprehensive tracking and compliance monitoring.
 ● Infisign provided transactional log export APIs for audit data
 integration, pre-configured reports, dashboards, and real-time alerting
-features for critical security even
+features for critical security even.
 """
 
-query = """Develop an in-depth blog post that explores the challenges and best practices of customer identity and access management. Showcase Infisign's solutions as a comprehensive approach to addressing these challenges and provide valuable insights for businesses seeking to enhance their user management capabilities.s
+query = """Craft a concise and informative tweet that highlights Infisign's expertise in providing tailored CIAM solutions. Use relevant hashtags and mention the key benefits of Infisign's solution, such as improved user experience, enhanced security, and reduced operational costs. Include a link to a blog post or website where users can find more information.
 """
 websearch_result="""no web_search result 
 """

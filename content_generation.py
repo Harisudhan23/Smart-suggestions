@@ -45,7 +45,7 @@ def smart_query_generate(transcript, context, titles):
         - **Tone**: Conversational, friendly, and relatable.
         - **Content**: Write a medium-length post that summarizes the document in a casual way. Include a question or call-to-action to invite comments.
         - **Format**: 2–3 paragraphs with relevant hashtags.
-- **Blog**:
+    - **Blog**:
         - **Tone**: Detailed, informative, and educational.
         - **Content**: Create a brief blog-like post (around 150–200 words) that introduces the document's key insights. Provide a solution or actionable takeaway.
         - **Format**: Paragraphs with a clear introduction and conclusion, using headings if necessary.

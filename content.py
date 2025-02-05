@@ -10,7 +10,7 @@ os.environ['GOOGLE_API_KEY'] = "AIzaSyBzSFL43Im7fIv-UGD9WTV4RitWG4VQC0g"
 
 model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.5)
 
-def smart_query_generate(transcript, context, titles):
+def smart_query_generate(document, query, titles):
     template1 = ('''
         "system", 
         """
@@ -32,12 +32,11 @@ def smart_query_generate(transcript, context, titles):
 
 4. **Post Formatting Instructions**:
     - **LinkedIn**:
-        - **Hook**: Begin with a compelling question, bold statement, or data-driven insight to immediately grab attention and spark curiosity.
-        - **Tone**: Professional, informative, and engaging tone that resonates with industry professionals.
-        - **Content**: Craft a concise and insightful post that highlights key takeaways from the document. Provide unique insights, expert perspectives, or actionable strategies that add value to the audience.
+        - **Hook**: Begin with a compelling question, bold statement, or data-driven insight that immediately grabs attention and sparks curiosity.
+        - **Tone**: Keep it approachable yet professional, informative, and engaging tone that resonates with industry professionals.
+        - **Content**: Craft a concise and insightful post that highlights key takeaways from the document. Provide unique actionable insights, expert perspectives, or actionable strategies that add value to the audience.
                        Incorporate real-world applications, relevant trends, or thought-provoking statements to encourage engagement.End with a strong call-to-action (e.g., asking for opinions, encouraging discussion, or suggesting next steps).
         - **Format**: 3–4 short, well-structured paragraphs for readability. Use concise language while maintaining depth and clarity. Include 2–5 relevant hashtags to optimize reach and engagement.
-
 
     - **Twitter**:
         - **Hook**: Start with a bold statement, thought-provoking question, surprising fact, or a concise data-driven insight to immediately capture attention.
@@ -48,7 +47,7 @@ def smart_query_generate(transcript, context, titles):
 
     - **Facebook**:
         - **Hook**: Start with a compelling question, bold statement, or relatable insight to grab attention.
-        - **Tone**: Keep it friendly, conversational, and engaging, making it easy for readers to relate.
+        - **Tone**: Keep it friendly, conversational, and engaging, making it easy for readers to relate.  Speak to the audience like you would a friend but maintain professionalism. Use contractions and informal language to make it feel natural.
         - **Content**: Write a medium-length post that summarizes the document in a casual way. Use a casual, storytelling approach to make the topic more engaging. 
                        Keep sentences short and direct for better readability. Add a question or call-to-action to spark conversation and encourage comments.
         - **Engagement boosters**: Use emojis to add personality and improve readability. Include hashtags (2–3 relevant ones) to increase visibility         
@@ -170,7 +169,7 @@ integration, pre-configured reports, dashboards, and real-time alerting
 features for critical security even.
 """
 
-query = """Craft a concise and informative tweet that highlights Infisign's expertise in providing tailored CIAM solutions. Use relevant hashtags and mention the key benefits of Infisign's solution, such as improved user experience, enhanced security, and reduced operational costs. Include a link to a blog post or website where users can find more information.
+query = """"Create an engaging Facebook post that introduces Infisign's CIAM services to a wider audience. Use visually appealing graphics and a conversational tone to explain the benefits of CIAM and how it can help businesses improve security and streamline operations. Include a link to Infisign's website for more information.
 """
 websearch_result="""no web_search result 
 """

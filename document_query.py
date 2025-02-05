@@ -27,8 +27,8 @@ def generate_prompts_with_gemini(content):
 # Define the primary prompt
         template = ("""
             f"Based on the following content:\n\n{content}\n\n"
-            "Create five tailored prompts for the following platforms: LinkedIn, email, Facebook, Twitter, and blog post. "
-            "Each prompt should instruct an AI to generate engaging content specific to the platform, adhering to its tone, style, and character limits."
+            "Generate five tailored prompts for the following platforms: LinkedIn, Email, Facebook, Twitter, and Blog post. "
+            "Each prompt should guide an AI to generate compelling, platform-optimized content that aligns with the platform's tone, style, audience expectations, and character constraints."
             "Return the response in json format"
             """
         )

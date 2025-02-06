@@ -14,6 +14,7 @@ def smart_query_generate(document, query, titles):
     template1 = ('''
         "system", 
         """
+        You are a content generator for the social media platforms. Your task is to analyze the given query, document, and web search results to generate a platform-specific post.         
         Given the query: '[query]' and the document '[Document]' and [websearch_result], identify the social media platform (LinkedIn, Twitter, Facebook, Blog, or Email) mentioned or implied in the query. Based on the identified platform, generate one tailored post for that platform, using content from the document and websearch_result for context. Follow these instructions for the post:
 
 1. **Analyze the query**:
@@ -32,11 +33,12 @@ def smart_query_generate(document, query, titles):
 
 4. **Post Formatting Instructions**:
     - **LinkedIn**:
-        - **Hook**: Begin with a compelling question, bold statement, or data-driven insight that immediately grabs attention and sparks curiosity.
-        - **Tone**: Keep it approachable yet professional, informative, and engaging tone that resonates with industry professionals.
-        - **Content**: Craft a concise and insightful post that highlights key takeaways from the document. Provide unique actionable insights, expert perspectives, or actionable strategies that add value to the audience.
-                       Incorporate real-world applications, relevant trends, or thought-provoking statements to encourage engagement.End with a strong call-to-action (e.g., asking for opinions, encouraging discussion, or suggesting next steps).
-        - **Format**: 3–4 short, well-structured paragraphs for readability. Use concise language while maintaining depth and clarity. Include 2–5 relevant hashtags to optimize reach and engagement.
+        - **Hook**: Begin with a compelling opening—a thought-provoking question, bold statement, or data-driven insight—to immediately capture attention and spark curiosity. 
+        - **Tone**: Maintain an approachable yet professional tone that resonates with both technical experts and business decision-makers. Ensure the content is insightful, engaging, and solution-oriented.
+        - **Content**: Clearly articulate the key concept in a concise manner. Strengthen the message with real-world examples, practical applications, or industry best practices. Emphasize the value proposition, addressing common challenges and the benefits of the solution.
+        - **Engagement**: Encourage interaction by incorporating a thought-provoking question or a strong call to action (CTA). The post should be structured into 3–4 short paragraphs for easy readability.         
+        - **Format**: Utilize bullet points or numbered lists to break down key takeaways, ensuring clarity and impact. Keep sentences sharp, concise, and action-driven.
+        - **Hastags**: Optimize reach by including 2–5 relevant industry hashtags.         
 
     - **Twitter**:
         - **Hook**: Start with a bold statement, thought-provoking question, surprising fact, or a concise data-driven insight to immediately capture attention.
@@ -54,12 +56,12 @@ def smart_query_generate(document, query, titles):
         - **Format**: 2–3 short paragraphs with natural flow. Line breaks for better readability.
 
     - **Blog**:
-        - **Hook**: Begin with a compelling question, bold statement, or surprising fact that immediately captures attention.
-        - **Tone**: Keep the tone informative, detailed, and educational while ensuring readability.
-        - **Content**: Create a well-structured blog post (500–600 words) that introduces the document’s key insights in an engaging and easy-to-digest manner.Ensure clarity and logical flow from introduction to conclusion. Use a storytelling approach where applicable to enhance engagement. 
-        - **Readability & Engagement**: Utilize bullet points, numbered lists, or bold highlights to emphasize important takeaways. Support claims with real-world examples, case studies, or relevant data to add credibility. Provide a clear solution or actionable takeaway that readers can implement.
-        - **SEO Optimization**: Include a meta description summarizing the article and reference credible sources through internal and external links. Write a meta description summarizing the article concisely (150–160 characters). Include internal and external links to authoritative sources where appropriate.
-        - **Format**: Use clear subheadings for easy navigation and readability, keeping paragraphs concise (2–3 sentences each). Ensure a strong conclusion that reinforces key takeaways and encourages engagement (e.g., a thought-provoking question or call to action).
+        - **Hook**: Begin with a compelling question, bold statement, or surprising statistic to instantly capture attention. Establish relevance by addressing a common challenge or curiosity.
+        - **Tone**: Keep the tone informative, detailed, and educational yet engaging tone that balances depth with accessibility.
+        - **Content and Readability**: Create a well-structured blog post (500–600 words) Use concise paragraphs (2–3 sentences each), bullet points, and numbered lists to improve readability. Incorporate storytelling, real-world examples, and case studies to make insights relatable. Provide a clear, structured flow from introduction to conclusion, ensuring logical progression. 
+        - **Engagement & Value**: Highlight key takeaways using bold text or callout sections to emphasize insights. Support claims with relevant data, statistics, or expert opinions for credibility. Include a FAQ section if applicable to preemptively address common reader questions.
+        - **SEO Optimization**: Write an SEO-friendly meta description (150–160 characters) summarizing the blog. Naturally integrate primary and semantic keywords throughout the content. Optimize for featured snippets by structuring key insights in concise, direct formats. Include internal links (to relevant site content) and external links (to credible sources) to boost authority.
+        - **Format**: Reinforce key takeaways and offer actionable steps or a clear solution. End with an engagement-driven CTA (e.g., “What are your thoughts on this? Comment below!”).
 
     - **Email**:
         - **Tone**: Personal, direct, and action-oriented to make the reader feel valued and motivated to respond.
@@ -82,12 +84,12 @@ def smart_query_generate(document, query, titles):
 
                         }}
     
-                    Once the platform is identified, generate content tailored for that platform.
-                    "document":{document}
-                    "query":{query} 
-                    "websearch_result":{websearch_result}
+                        Once the platform is identified, generate content tailored for that platform.
+                        "document":{document}
+                        "query":{query} 
+                        "websearch_result":{websearch_result}
 
-               """                                                        
+                    """                                                        
                                     ''')
     
     prompt = ChatPromptTemplate.from_template(template1)
@@ -169,7 +171,7 @@ integration, pre-configured reports, dashboards, and real-time alerting
 features for critical security even.
 """
 
-query = """"Create an engaging Facebook post that introduces Infisign's CIAM services to a wider audience. Use visually appealing graphics and a conversational tone to explain the benefits of CIAM and how it can help businesses improve security and streamline operations. Include a link to Infisign's website for more information.
+query = """Develop an engaging blog post that delves into the challenges faced by businesses in managing customer identity and access. Position Infisign as the thought leader in this space, providing insights into best practices and the benefits of implementing a comprehensive solution.
 """
 websearch_result="""no web_search result 
 """

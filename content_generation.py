@@ -155,7 +155,7 @@ integration, pre-configured reports, dashboards, and real-time alerting
 features for critical security even
 """
 
-query = """Compose a personalized email to a potential client introducing Infisign's CIAM solution. Briefly outline the challenges businesses commonly face in this area and how Infisign's solution can help them address these challenges. Include a link to a case study or resource that provides more information. Conclude with a clear call-to-action, such as scheduling a demo or providing a free consultation.
+query =""" Develop an engaging blog post that delves into the challenges faced by businesses in managing customer identity and access. Position Infisign as the thought leader in this space, providing insights into best practices and the benefits of implementing a comprehensive solution.
 """
 websearch_result="""no web_search result 
 """
